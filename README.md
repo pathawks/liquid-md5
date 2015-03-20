@@ -6,11 +6,22 @@
 
 *A Liquid filter that outputs an MD5 hash*
 
+## Installation
+
+1. Add `gem 'liquid-md5'` to your site's Gemfile and run `bundle`
+2. Add the following to your site's `_config.yml`:
+
+```yml
+gems:
+  - liquid-md5
 ```
+
+## Usage
+```liquid
 {{ site.email | md5 }}
 ```
 
 Can be useful for generating Gravatar URLs from email addresses.
-```
+```liquid
 http://gravatar.com/avatar/{{ site.email | downcase | md5 }}?s=144
 ```
