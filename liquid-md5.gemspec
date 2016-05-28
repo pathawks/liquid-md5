@@ -2,7 +2,7 @@
 
 Gem::Specification.new do |spec|
   spec.name          = "liquid-md5"
-  spec.version       = "0.0.1"
+  spec.version       = "0.0.2"
   spec.authors       = ["Pat Hawks"]
   spec.email         = ["pat@pathawks.com"]
   spec.summary       = "Adds md5 filter to Liquid."
