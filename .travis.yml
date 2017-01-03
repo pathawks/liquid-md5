@@ -4,3 +4,12 @@ rvm:
   - 2.0
   - 1.9.3
 script: "script/cibuild"
+
+deploy:
+  provider: rubygems
+  api_key:
+    secure: O8fGRnM6OJCqC2BlVE1BqYfq5aR19ulpiHhQwRiHbtSCh8H4rYt7FLsuOwSTtRQjhWYRRSpdRt2ilfQ6PY6Jx1UkxZq5zo9QAPQ9tKxiFTm7gBpZAiAgb06eyaMBSzyQ8qe2qccaFI6CiZhsiaGMsdKsWuYpuoPmdLPd7aDyYJs=
+  gem: jekyll-sitemap
+  on:
+    tags: true
+    repo: pathawks/liquid-md5
