@@ -1,16 +1,15 @@
 language: ruby
 rvm:
-  - 2.3
-  - 2.2
-  - 2.1
-  - 2.0
-script: "script/cibuild"
-
+- 2.3
+- 2.2
+- 2.1
+- 2.0
+script: script/cibuild
 deploy:
   provider: rubygems
   api_key:
-    secure: O8fGRnM6OJCqC2BlVE1BqYfq5aR19ulpiHhQwRiHbtSCh8H4rYt7FLsuOwSTtRQjhWYRRSpdRt2ilfQ6PY6Jx1UkxZq5zo9QAPQ9tKxiFTm7gBpZAiAgb06eyaMBSzyQ8qe2qccaFI6CiZhsiaGMsdKsWuYpuoPmdLPd7aDyYJs=
-  gem: jekyll-sitemap
+    secure: frajz16zO85SIerwt+2CCjZ9BXgwn0seWfnfshJRoxk6MQd9X8pegM2gKIwKNMZHi72tU9rWOaCmwToJ0v+3c79DjZeQglqUSM+7i9dbr5vVHpDfJYppUSLpBT+c8hq/K9OibyuTU2Ar+U+zhRrcK4frwPYxHu63+qw71j48jTs=
+  gem: liquid-md5
   on:
     tags: true
     repo: pathawks/liquid-md5
